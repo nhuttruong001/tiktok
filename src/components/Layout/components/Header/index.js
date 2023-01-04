@@ -1,4 +1,5 @@
 import styles from './Header.module.scss';
+import Button from '~/components/Button';
 import classNames from 'classnames/bind';
 import images from '~/assets/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -52,7 +53,10 @@ function Header() {
                         </button>
                 </div>
                 </Tippy >
-                <div className={cx('actions')}></div>
+                <div className={cx('actions')}>
+                    <Button text>Upload</Button>
+                    <Button primary>Log in</Button>
+                </div>
             </div>
         </header>
     );
